@@ -1,5 +1,5 @@
 [versions]
-agp = "8.5.2"
+agp = "8.6.0"
 kotlin = "2.0.20"
 
 composeCompiler = "1.5.13"
@@ -11,10 +11,10 @@ androidx-appcompat = "1.7.0"
 androidx-core-ktx = "1.13.1"
 androidx-material = "1.12.0"
 
-androidx-activityCompose = "1.9.1"
+androidx-activityCompose = "1.9.2"
 
 junit = "4.13.2"
-lifecycleRuntimeKtx = "2.8.4"
+lifecycleRuntimeKtx = "2.8.5"
 composeBom = "2024.09.01"
 
 [libraries]
