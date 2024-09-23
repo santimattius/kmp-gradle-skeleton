@@ -15,7 +15,7 @@ androidx-activityCompose = "1.9.2"
 
 junit = "4.13.2"
 lifecycleRuntimeKtx = "2.8.5"
-composeBom = "2024.09.01"
+composeBom = "2024.09.02"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
