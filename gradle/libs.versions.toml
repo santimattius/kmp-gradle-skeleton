@@ -14,7 +14,7 @@ androidx-material = "1.12.0"
 androidx-activityCompose = "1.9.3"
 
 junit = "4.13.2"
-lifecycleRuntimeKtx = "2.8.6"
+lifecycleRuntimeKtx = "2.8.7"
 composeBom = "2024.10.00"
 
 [libraries]
