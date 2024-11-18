@@ -16,7 +16,7 @@ androidx-activityCompose = "1.9.3"
 junit = "4.13.2"
 
 lifecycleRuntimeKtx = "2.8.7"
-composeBom = "2024.10.01"
+composeBom = "2024.11.00"
 
 
 [libraries]
