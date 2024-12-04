@@ -1,11 +1,11 @@
 [versions]
-agp = "8.7.2"
+agp = "8.7.3"
 kotlin = "2.1.0"
 
 composeCompiler = "1.5.13"
-android-compileSdk = "34"
+android-compileSdk = "35"
 android-minSdk = "24"
-android-targetSdk = "34"
+android-targetSdk = "35"
 
 androidx-appcompat = "1.7.0"
 androidx-core-ktx = "1.15.0"
