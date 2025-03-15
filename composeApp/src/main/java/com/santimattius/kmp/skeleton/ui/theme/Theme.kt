@@ -49,6 +49,7 @@ fun KMPGradleSkeletonTheme(
         else -> LightColorScheme
     }
 
+
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
