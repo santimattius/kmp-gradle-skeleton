@@ -3,10 +3,6 @@ import Shared
 
 let aspect = 0.67
 
-//extension Character: @retroactive Identifiable{
-//    
-//}
-
 struct ContentView: View {
     private let viewModel = KoinContainer.shared.characterViewModel()
     
