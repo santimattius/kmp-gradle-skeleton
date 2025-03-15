@@ -65,6 +65,11 @@ kotlin {
     }
 }
 
+skie {
+    features {
+        enableSwiftUIObservingPreview = true
+    }
+}
 
 // KSP Tasks
 dependencies {
