@@ -1,5 +1,5 @@
 [versions]
-agp = "8.9.0"
+agp = "8.9.1"
 kotlin = "2.1.10"
 ksp = "2.1.10-1.0.31"
 skie = "0.10.1"
@@ -14,11 +14,11 @@ androidx-material = "1.12.0"
 
 androidx-activityCompose = "1.10.1"
 
-lifecycle = "2.9.0-alpha12"
+lifecycle = "2.9.0-alpha13"
 composeBom = "2025.03.01"
 
 kotlinxCoroutines = "1.10.1"
-ktorVersion = "3.1.1"
+ktorVersion = "3.1.2"
 koin = "4.1.0-Beta5"
 koinAnnotations = "2.0.0"
 
