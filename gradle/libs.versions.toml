@@ -19,7 +19,7 @@ composeBom = "2025.04.01"
 
 kotlinxCoroutines = "1.10.2"
 ktorVersion = "3.1.2"
-koin = "4.1.0-Beta8"
+koin = "4.1.0-Beta11"
 koinAnnotations = "2.0.0"
 
 kermit = "2.0.5"
