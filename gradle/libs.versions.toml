@@ -24,7 +24,7 @@ koinAnnotations = "2.0.0"
 
 kermit = "2.0.5"
 
-coil = "3.1.0"
+coil = "3.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
