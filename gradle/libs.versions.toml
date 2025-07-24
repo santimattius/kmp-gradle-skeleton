@@ -1,8 +1,8 @@
 [versions]
-agp = "8.11.0"
-kotlin = "2.1.21"
+agp = "8.11.1"
+kotlin = "2.2.0"
 ksp = "2.2.0-2.0.2"
-skie = "0.10.2-preview.2.1.20"
+skie = "0.10.4"
 
 android-compileSdk = "35"
 android-minSdk = "24"
@@ -14,17 +14,17 @@ androidx-material = "1.12.0"
 
 androidx-activityCompose = "1.10.1"
 
-lifecycle = "2.9.1"
-composeBom = "2025.06.01"
+lifecycle = "2.9.2"
+composeBom = "2025.07.00"
 
 kotlinxCoroutines = "1.10.2"
-ktorVersion = "3.2.0"
+ktorVersion = "3.2.2"
 koin = "4.1.0"
 koinAnnotations = "2.1.0"
 
 kermit = "2.0.6"
 
-coil = "3.2.0"
+coil = "3.3.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
