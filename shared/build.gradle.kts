@@ -2,14 +2,17 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
-    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.androidKMPLibrary)
     alias(libs.plugins.kotlinSerialization)
     alias(libs.plugins.ksp)
     alias(libs.plugins.skie)
 }
 
 kotlin {
-    androidTarget {
+    androidLibrary {
+        namespace = "com.santimattius.kmp.skeleton.shared"
+        compileSdk = libs.versions.android.compileSdk.get().toInt()
+        minSdk = libs.versions.android.minSdk.get().toInt()
         compilerOptions {
             jvmTarget = JvmTarget.fromTarget("17")
         }
@@ -85,11 +88,3 @@ dependencies {
 //    }
 //}
 
-
-android {
-    namespace = "com.santimattius.kmp.skeleton.shared"
-    compileSdk = libs.versions.android.compileSdk.get().toInt()
-    defaultConfig {
-        minSdk = libs.versions.android.minSdk.get().toInt()
-    }
-}
