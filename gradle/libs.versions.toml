@@ -1,8 +1,8 @@
 [versions]
 agp = "8.12.0"
 kotlin = "2.2.10"
-ksp = "2.2.0-2.0.2"
-skie = "0.10.5"
+ksp = "2.2.10-2.0.2"
+skie = "0.10.6"
 
 android-compileSdk = "35"
 android-minSdk = "24"
@@ -15,7 +15,7 @@ androidx-material = "1.12.0"
 androidx-activityCompose = "1.10.1"
 
 lifecycle = "2.9.2"
-composeBom = "2025.07.00"
+composeBom = "2025.08.00"
 
 kotlinxCoroutines = "1.10.2"
 ktorVersion = "3.2.3"
