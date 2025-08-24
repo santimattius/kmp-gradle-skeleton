@@ -1,12 +1,12 @@
 [versions]
-agp = "8.12.0"
+agp = "8.12.1"
 kotlin = "2.2.10"
 ksp = "2.2.10-2.0.2"
 skie = "0.10.6"
 
-android-compileSdk = "35"
+android-compileSdk = "36"
 android-minSdk = "24"
-android-targetSdk = "35"
+android-targetSdk = "36"
 
 androidx-appcompat = "1.7.1"
 androidx-core-ktx = "1.17.0"
@@ -22,7 +22,7 @@ ktorVersion = "3.2.3"
 koin = "4.1.0"
 koinAnnotations = "2.1.0"
 
-kermit = "2.0.6"
+kermit = "2.0.8"
 
 coil = "3.3.0"
 
