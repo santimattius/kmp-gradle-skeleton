@@ -24,6 +24,7 @@ kotlin {
         iosSimulatorArm64()
     ).forEach { iosTarget ->
         iosTarget.binaries.framework {
+            export(libs.androidx.lifecycle.viewmodel)
             baseName = "Shared"
             isStatic = true
         }
@@ -40,7 +41,7 @@ kotlin {
 
             implementation(libs.koin.core)
 
-            implementation(libs.androidx.lifecycle.viewmodel)
+            api(libs.androidx.lifecycle.viewmodel)
 
             implementation(libs.koin.annotations)
             api(libs.koin.annotations)
@@ -75,16 +76,5 @@ skie {
 // KSP Tasks
 dependencies {
     add("kspCommonMainMetadata", libs.koin.ksp.compiler)
-    add("kspAndroid", libs.koin.ksp.compiler)
-    add("kspIosX64", libs.koin.ksp.compiler)
-    add("kspIosArm64", libs.koin.ksp.compiler)
-    add("kspIosSimulatorArm64", libs.koin.ksp.compiler)
 }
-
-// Trigger Common Metadata Generation from Native tasks
-//project.tasks.withType(KotlinCompilationTask::class.java).configureEach {
-//    if(name != "kspCommonMainKotlinMetadata") {
-//        dependsOn("kspCommonMainKotlinMetadata")
-//    }
-//}
 
