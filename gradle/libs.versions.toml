@@ -15,7 +15,7 @@ androidx-material = "1.13.0"
 androidx-activityCompose = "1.12.3"
 
 lifecycle = "2.10.0"
-composeBom = "2025.12.01"
+composeBom = "2026.01.01"
 
 kotlinxCoroutines = "1.10.2"
 ktorVersion = "3.4.0"
