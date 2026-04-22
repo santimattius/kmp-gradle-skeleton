@@ -1,11 +1,10 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidKMPLibrary)
     alias(libs.plugins.kotlinSerialization)
-    alias(libs.plugins.ksp)
+    alias(libs.plugins.koinCompilerPlugin)
     alias(libs.plugins.skie)
 }
 
@@ -45,7 +44,6 @@ kotlin {
             api(libs.androidx.lifecycle.viewmodel)
 
             implementation(libs.koin.annotations)
-            api(libs.koin.annotations)
 
             implementation(libs.kermit)
         }
@@ -61,26 +59,14 @@ kotlin {
             implementation(libs.ktor.client.darwin)
         }
     }
+}
 
-    // KSP Common sourceSet
-    sourceSets.named("commonMain").configure {
-        kotlin.srcDir("build/generated/ksp/metadata/commonMain/kotlin")
-    }
+koinCompiler {
+    userLogs = true
 }
 
 skie {
     features {
         enableSwiftUIObservingPreview = true
-    }
-}
-
-// KSP Tasks
-dependencies {
-    add("kspCommonMainMetadata", libs.koin.ksp.compiler)
-}
-
-tasks.withType<KotlinCompile>().configureEach {
-    if (name != "kspCommonMainKotlinMetadata") {
-        dependsOn("kspCommonMainKotlinMetadata")
     }
 }

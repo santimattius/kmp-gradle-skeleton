@@ -57,7 +57,7 @@ class MainActivity : ComponentActivity() {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun CharacterScreen(
-    viewModel: CharacterViewModel = koinViewModel()
+    viewModel: CharacterViewModel = koinViewModel<CharacterViewModel>()
 ) {
     Scaffold(
         topBar = {
