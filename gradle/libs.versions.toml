@@ -1,30 +1,30 @@
 [versions]
-agp = "8.13.2"
-kotlin = "2.3.0"
-ksp = "2.3.4"
-skie = "0.10.9"
+agp = "9.1.1"
+kotlin = "2.3.20"
+koinCompilerPlugin = "1.0.0-RC2"
+skie = "0.10.11"
 
 android-compileSdk = "36"
 android-minSdk = "24"
 android-targetSdk = "36"
 
 androidx-appcompat = "1.7.1"
-androidx-core-ktx = "1.17.0"
+androidx-core-ktx = "1.18.0"
 androidx-material = "1.13.0"
 
-androidx-activityCompose = "1.12.3"
+androidx-activityCompose = "1.13.0"
 
 lifecycle = "2.10.0"
-composeBom = "2026.01.01"
+composeBom = "2026.03.01"
 
 kotlinxCoroutines = "1.10.2"
-ktorVersion = "3.4.0"
-koin = "4.1.1"
-koinAnnotations = "2.3.1"
+ktorVersion = "3.4.2"
+koin = "4.2.1"
+koinAnnotations = "4.2.1"
 
-kermit = "2.0.8"
+kermit = "2.1.0"
 
-coil = "3.3.0"
+coil = "3.4.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core-ktx" }
@@ -61,7 +61,6 @@ koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-androidx-compose= { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
 koin-annotations = { module = "io.insert-koin:koin-annotations", version.ref = "koinAnnotations" }
-koin-ksp-compiler= { module = "io.insert-koin:koin-ksp-compiler", version.ref = "koinAnnotations" }
 
 kermit = { module = "co.touchlab:kermit", version.ref = "kermit" }
 
@@ -70,7 +69,6 @@ androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidKMPLibrary = { id ="com.android.kotlin.multiplatform.library", version.ref ="agp" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+koinCompilerPlugin = { id = "io.insert-koin.compiler.plugin", version.ref = "koinCompilerPlugin" }
 skie = { id = "co.touchlab.skie", version.ref = "skie" }
