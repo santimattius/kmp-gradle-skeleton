@@ -17,7 +17,7 @@ androidx-activityCompose = "1.13.0"
 lifecycle = "2.10.0"
 composeBom = "2026.04.01"
 
-kotlinxCoroutines = "1.10.2"
+kotlinxCoroutines = "1.11.0"
 ktorVersion = "3.4.3"
 koin = "4.2.1"
 koinAnnotations = "4.2.1"
