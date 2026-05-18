@@ -18,7 +18,7 @@ lifecycle = "2.10.0"
 composeBom = "2026.05.00"
 
 kotlinxCoroutines = "1.11.0"
-ktorVersion = "3.4.3"
+ktorVersion = "3.5.0"
 koin = "4.2.1"
 koinAnnotations = "4.2.1"
 
