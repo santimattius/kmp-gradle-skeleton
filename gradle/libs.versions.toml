@@ -1,7 +1,7 @@
 [versions]
 agp = "9.2.1"
 kotlin = "2.3.21"
-koinCompilerPlugin = "1.0.0-RC2"
+koinCompilerPlugin = "1.0.0"
 skie = "0.10.11"
 
 android-compileSdk = "36"
