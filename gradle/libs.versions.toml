@@ -1,7 +1,7 @@
 [versions]
 agp = "9.2.1"
 kotlin = "2.3.21"
-koinCompilerPlugin = "1.0.0-RC2"
+koinCompilerPlugin = "1.0.0"
 skie = "0.10.12"
 
 android-compileSdk = "36"
@@ -10,7 +10,7 @@ android-targetSdk = "36"
 
 androidx-appcompat = "1.7.1"
 androidx-core-ktx = "1.18.0"
-androidx-material = "1.13.0"
+androidx-material = "1.14.0"
 
 androidx-activityCompose = "1.13.0"
 
@@ -18,7 +18,7 @@ lifecycle = "2.10.0"
 composeBom = "2026.05.00"
 
 kotlinxCoroutines = "1.11.0"
-ktorVersion = "3.4.3"
+ktorVersion = "3.5.0"
 koin = "4.2.1"
 koinAnnotations = "4.2.1"
 
