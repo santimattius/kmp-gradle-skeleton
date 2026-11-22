@@ -4,7 +4,8 @@ import kotlin.experimental.ExperimentalObjCName
 import kotlin.native.ObjCName
 
 
-data class Character @OptIn(ExperimentalObjCName::class) constructor(
+@OptIn(ExperimentalObjCName::class)
+data class Character(
     val id: Long,
     val name: String,
     val image: String,
