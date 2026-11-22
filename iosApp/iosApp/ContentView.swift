@@ -4,11 +4,16 @@ import Shared
 let aspect = 0.67
 
 struct ContentView: View {
-    private let viewModel = KoinContainer.shared.characterViewModel()
+
+    /// Use the store owner as a StateObject to allow retrieving ViewModels and scoping it to this screen.
+   @StateObject private var viewModelStoreOwner = IosViewModelStoreOwner()
     
     var body: some View {
+        let mainViewModel: CharacterViewModel = viewModelStoreOwner.viewModel(
+            factory: CharacterViewModelFactory()
+        )
         NavigationView {
-            Observing(viewModel.state){ state in
+            Observing(mainViewModel.state){ state in
                 stateView(state: state)
                 
             }
